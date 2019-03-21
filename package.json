@@ -1,0 +1,14 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "license": "MIT",
+  "scripts": {
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ test/"
+  },
+  "dependencies": {
+    "eslint": "^5.10.0",
+    "htmlhint": "^0.10.1"
+  }
+}
