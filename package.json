@@ -1,14 +1,26 @@
 {
-  "name": "portafolio",
+  "name": "lim008-fe-silicon-valley",
   "version": "1.0.0",
-  "main": "src/index.html",
-  "license": "MIT",
+  "description": "''",
+  "main": "index.js",
   "scripts": {
-    "htmlhint": "htmlhint src/*.html test/*.html",
-    "eslint": "eslint --ext .js src/ test/"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielaDiazB/lim008-fe-silicon-valley.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Gabriela Diaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GabrielaDiazB/lim008-fe-silicon-valley/issues"
+  },
+  "homepage": "https://github.com/GabrielaDiazB/lim008-fe-silicon-valley#readme",
   "dependencies": {
-    "eslint": "^5.10.0",
-    "htmlhint": "^0.10.1"
+    "eslint": "^5.15.3",
+    "htmlhint": "^0.11.0"
   }
 }
