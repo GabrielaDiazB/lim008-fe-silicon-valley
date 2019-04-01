@@ -65,7 +65,7 @@ section h1{
 .home-img{
   width:100%;
   height: 700px;
-  background-image: url('src/img/fondo-home.png');
+  background-image: url('./img/fondo-home.png');
   background-position: center;
   background-size: cover;
   animation: yourAnimation2 .3s forwards 0s ease;
