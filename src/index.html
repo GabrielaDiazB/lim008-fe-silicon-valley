@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portafolio</title>
     <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -28,15 +29,23 @@
         </div>
     </section>
 
-    <section id="about-me" class="about-me">
+    <section id="about-me" class="about-me margin-top">
         <div>
             <img src="" alt="">
-            <a name="aboutme"><h2>Acerca de mí</h2></a>
-            <p>Hola, soy una front-end developer interesada en temas de tecnología, los usos que se le puedan dar y las oportunidades que estos representan. La programación ha sido un complemento muy grande para mis estudios y estoy en búsqueda de tener mucho más experiencia en este campo. Soy una entusiasta de los juegos de habilidad y estoy en búsqueda de nuevos retos.</p>
+            <a name="aboutme"><h1>Acerca de mí</h1></a>
+            <div class="aboutme-box">
+                <p class="aboutme-text">Hola, soy una front-end developer interesada en temas de tecnología, los usos que se le puedan dar y las oportunidades que estos representan. La programación ha sido un complemento muy grande para mis estudios y estoy en búsqueda de tener mucho más experiencia en este campo. Soy una entusiasta de los juegos de habilidad y estoy en búsqueda de nuevos retos.</p>
+                <a href="" download="cv">Aquí puedes descargar mi CV</a>
+            </div>
+
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="skills margin-top">
         <a name="skills"><h1>Mis Habilidades</h1></a>
+        <p class="skills-text">Como Front-End Developer mis herramientas principales son JavaScript, Node, HTML y CSS. Sin embargo, 
+        mientras iba realizando nuevos proyectos comencé a utilizar otros recursos los cuales he ido utilizando con mayor frecuencia,
+        Node de la mano de javascript y Firebase. Actualmente me encuentro familiarizándome con el framework Angular y estoy desarrollando
+        proyectos nuevos con esta herramienta. </p>
         <div class="skills-chart">
             <span><img class="skills-icon" src="/img/html5.png" alt=""> HTML</span> 
             <div class="progress-bar1" role="progressbar" aria-valuenow="90%" aria-valuemin="0" aria-valuemax="100">90%</div>
@@ -44,6 +53,8 @@
             <div class="progress-bar2" role="progressbar" aria-valuenow="80%" aria-valuemin="0" aria-valuemax="100">80%</div>
             <span><img class="skills-icon" src="/img/javascript6.png" alt=""> Javascript</span>
             <div class="progress-bar3" role="progressbar" aria-valuenow="70%" aria-valuemin="0" aria-valuemax="100">70%</div>
+            <span><img class="skills-icon" src="/img/nodejs.png" alt=""> Node</span>
+            <div class="progress-bar8" role="progressbar" aria-valuenow="70%" aria-valuemin="0" aria-valuemax="100">70%</div>
             <span><img class="skills-icon" src="/img/github.png" alt=""> GitHub</span>
             <div class="progress-bar4" role="progressbar" aria-valuenow="90%" aria-valuemin="0" aria-valuemax="100">90%</div>
             <span><img class="skills-icon" src="/img/git.png" alt=""> Git</span>
@@ -54,64 +65,101 @@
             <div class="progress-bar7" role="progressbar" aria-valuenow="100%" aria-valuemin="0" aria-valuemax="100">Coming Soon</div>
         </div>    
     </section>
-    <section id="projects">
-        <a name="projects"><h2>Mis Proyectos</h2></a>
+    <section id="projects" class="projects margin-top">
+        <a name="projects"><h1>Mis Proyectos</h1></a>
         <div class="projects-list">
-            <div class="data-lovers">
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <div class="numbertext">1 / 3</div>
-                            <img src="/img/slidesimg/datalovers1.png" style="width:20%">
-                            <div class="text">Caption Text</div>
-                        </div>                           
-                        <div class="mySlides fade">
-                            <div class="numbertext">2 / 3</div>
-                            <img src="/img/slidesimg/datalovers2.png" style="width:20%">
-                            <div class="text">Caption Two</div>
-                        </div>    
-                        <div class="mySlides fade">
-                            <div class="numbertext">3 / 3</div>
-                            <img src="/img/slidesimg/datalovers3.png" style="width:20%">
-                            <div class="text">Caption Three</div>
-                        </div>
+            <div class="data-lovers slide-box">
+                <div class="slideshow-container">
+                    <div class="mySlides1 fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="/img/slidesimg/datalovers1.png">
+                    </div>                           
+                    <div class="mySlides1 fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="/img/slidesimg/datalovers2.png">
+                    </div>    
+                    <div class="mySlides1 fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="/img/slidesimg/datalovers3.png">
+                    </div>
                             
-                    </div>
-                    <br>                            
-                    <div style="text-align:center">
-                        <span class="dot"></span> 
-                        <span class="dot"></span> 
-                        <span class="dot"></span> 
-                    </div>
+                </div>
+                <br>                            
+                <div style="text-align:center">
+                    <span class="dot1"></span> 
+                    <span class="dot1"></span> 
+                    <span class="dot1"></span> 
+                </div>
                 <h3>Manipulación de data tipo JSON</h3>
-                <img src="" alt="">
-                <p>Descripción del proyecto Data Lovers</p>
-                <a href=""><i></i></a>
-    
+                <p>Descripción del proyecto Data Lovers</p>   
+                <a href=""><img class="download-icon" src="/img/cloud-download-alt-solid.svg" alt=""></a> 
             </div>
-            <div class="red-social">
+            <div class="red-social slides-box">
+                <div class="slideshow-container">
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="/img/slidesimg/redsocial1.png">
+                    </div>                           
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="/img/slidesimg/redsocial2.png">
+                    </div>    
+                    <div class="mySlides2 fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="/img/slidesimg/redsocial3.png">
+                    </div>
+                            
+                </div>                           
+                <div style="text-align:center">
+                    <span class="dot2"></span> 
+                    <span class="dot2"></span> 
+                    <span class="dot2"></span> 
+                </div>
+                <br>
                 <h3>Red Social</h3>
-                <img src="" alt="">
-                <p>Descripción del proceso de creación de la red social. </p>
-                <a href=""><i></i></a>
+                <p>Descripción del Proyecto de Red Social</p>
+                <a href=""><img class="download-icon" src="/img/cloud-download-alt-solid.svg" alt=""></a>
             </div>
-            <div class="md-links">
+            <div class="md-links slide-box">
+                <div class="slideshow-container">
+                    <div class="mySlides3 fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="/img/slidesimg/mdlinks1.png">
+                    </div>                           
+                    <div class="mySlides3 fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="/img/slidesimg/mdlinks2.png">
+                    </div>    
+                    <div class="mySlides3 fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="/img/slidesimg/mdlinks3.png">
+                    </div>                               
+                </div>
+                <br>                            
+                <div style="text-align:center">
+                    <span class="dot3"></span> 
+                    <span class="dot3"></span> 
+                    <span class="dot3"></span> 
+                </div>
                 <h3>Creación de una Librería</h3>
-                <img src="" alt="">
                 <p>Descripción de la librería</p>
-                <a href=""><i></i></a>
+                <a href=""><img class="download-icon" src="/img/cloud-download-alt-solid.svg" alt=""></a>
             </div>
         </div>
     </section>
-    <section id="contact-me">
-        <a name="contact"><h2>Puedes encontrarme en las siguientes redes:</h2></a>
+    <section id="contact-me" class="contact-me margin-top">
+        <a name="contact"><h1>Puedes encontrarme en las siguientes redes:</h1></a>
         <a target ="_blank" href="https://www.linkedin.com/in/gabrieladiazbravo/"><img class="contact-icons" src="/img/linkedin-brands.svg" alt=""></a>
         <a target ="_blank" href="https://github.com/GabrielaDiazB"><img class="contact-icons" src="/img/github-square-brands.svg" alt=""></a>
-        <a target ="_blank" href="https://twitter.com/GabrielaDBravo"><img class="contact-icons" src="/img/twitter-square-brands.svg" alt=""></a>
-        <a target ="_blank" href=""><img class="contact-icons" src="/img/envelope-regular.svg" alt=""></a>     
+        <a target ="_blank" href="https://twitter.com/GabrielaDBravo"><img class="contact-icons" src="/img/twitter-square-brands.svg" alt=""></a>     
+        <div class="number-email">
+            <img class="envelope-icon" src="/img/envelope-regular.svg" alt="">
+            <label for="envelope-icon">gabriela.dbravo@gmail.com</label>
+        </div>
     </section>
     <footer>
-        <h2>Coded by Gabriela Diaz.</h2>
-        <h2>Last updated 27/03/2019</h2>
+        <h2 class="footer-by">Coded by Gabriela Díaz.</h2>
+        <h2 class="footer-update">Last updated 1/04/2019</h2>
     </footer>
   <script type="module" src="index.js"></script>
 </body>
