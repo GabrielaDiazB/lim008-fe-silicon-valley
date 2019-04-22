@@ -12,22 +12,22 @@ header{
   position: fixed;
   z-index: 1000;
 }
+
+section{
+  padding-bottom: 30px;
+}
+
 .margin-top{
   margin-top: 10px;
   padding-top: 50px;
 }
-section h1{
-  text-align: center;
-  margin: 20px auto 30px auto;
-  padding-top: 20px;
-}
+
 .menu-bar{
   list-style-type: none;
   margin: 0;
   padding: 5px;
   overflow: hidden;
   background-color: white;
-  /* background-color: rgb(31, 30, 30); */
   animation: yourAnimation1 .9s forwards .0s ease;
 }
 @keyframes yourAnimation1{
@@ -64,7 +64,7 @@ section h1{
 
 .home-img{
   width:100%;
-  height: 700px;
+  height: 800px;
   background-image: url('./img/fondo-home.png');
   background-position: center;
   background-size: cover;
@@ -84,22 +84,24 @@ section h1{
   color: white;
   font-weight: bold;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 50%;
   padding: 20px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .home-text h1{
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 8px;
   margin-bottom: 40px;
 }
+
 .home-text h3{
-  font-size: 20px;
+  font-size: 30px;
   margin: 0;
 }
 
@@ -129,44 +131,67 @@ section h1{
 
 .arrow-down i:hover{
   opacity: 0.8;
+  color: #259D92;
 }
+
+.titles{
+  text-align: center;
+  font-size: 50px;
+  width: 100%;
+}
+
 .about-me{
+  width: 100%;
   height: 400px;
+  text-align: end;
+  
 }
+
+.avatar-pic{
+  width: 350px;
+  border-radius: 50%;
+  margin: 20px 150px 20px 20px;
+  float: left;
+}
+
 .aboutme-text{
-  padding-left: 20px;
-  font-size: 25px;
-  width: 60%;
+  padding-right: 50px;
+  font-size: 30px;
   text-align: justify;
 }
+
 .about-me a{
-  padding-left: 20px;
+  padding-right: 50px;
+  font-size: 25px;
 }
-.download-icon{
-  width: 35px;
+
+.link-icon{
+  width: 30px;
 }
-.download-icon:hover{
+
+.link-icon:hover{
   opacity: 0.4;
 }
+
 .skills{
   height: 600px;
 }
+
 .skills-text{
-  float: left;
-  padding-left: 20px;
-  font-size: 25px;
-  width: 60%;
+  font-size: 30px;
+  width: 65%;
   text-align: justify;
+  margin: auto 0;
+  float: left;
 }
+
 .skills-chart{
   background-color: rgba(226, 226, 226, 0.4);
   color: white;
   font-weight: bold;
   width: 400px;
   border-radius: 8px;
-  padding: 2px;
   float: right;
-  margin-right: 50px;
 }
 
 .skills-chart span{
@@ -244,85 +269,130 @@ section h1{
   text-align: center;
 }
 
-
-* {box-sizing: border-box;}
-.mySlides1 .mySlides2 .mySlides3 {display: none;}
-.mySlides1 .mySlides2 .mySlides3 img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.column-one{
+  width: 40%;
+  float: left;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  /* position: absolute; */
-  bottom: 8px;
+.projects-description{
+  padding-left: 50px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.projects-description span{
+  color: #259D92;
+  font-weight: bold;
+}
+/* Slideshow de imágenes */
+
+.mySlides {
   width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot1 .dot2 .dot3 {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+  position: relative;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  text-align: center;
+
+}
+.project-img {
+  vertical-align: middle;
 }
 
-.active {
-  background-color: #717171;
+/* Slideshow contenedor */
+.slideshow-container {
+max-width: 500px;
+position: relative;
+margin: auto;
 }
 
-/* Fading animation */
+/* Botones de Siguiente/Anterior */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: black;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Posición de los botones de "siguiente" a la derecha */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Con hover, color nuevo para que resalte */
+.prev:hover, .next:hover {
+background-color: #259D92;
+color:black;
+}
+
+/* Texto por imagen */
+.text {
+  color: black;
+  font-size: 30px;
+  width: 100%;
+}
+
+/* Número de la imagen (1/6 etc) */
+.numbertext {
+color: black;
+font-size: 20px;
+top: 0;
+}
+
+/* Las bolitas */
+.dot-chain{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #259D92;
+border-radius: 50%;
+transition: background-color 0.6s ease;
+}
+
+.active-slide-img, .dot:hover {
+background-color: gray;
+}
+
+/* Animación de las imágenes */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+from {opacity: .4} 
+to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+from {opacity: .4} 
+to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
+/* Responsive del Texto de cada imagen */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.prev, .next,.text {font-size: 11px}
 }
-
-.projects-list{
-  columns: 3;
-  text-align: center;
-}
-
-.slides-box{
-  height: 250px;
-}
-
 .contact-me{
   height: 450px;
   text-align: center;
@@ -336,12 +406,13 @@ section h1{
   width: 80px;
 }
 .contact-icons:hover{
-  opacity: 0.4;
+  opacity: 0.5;
 }
 .envelope-icon{
-  text-align: center;
-  padding: 10px;
-  width: 100px;
+  width: 50px;
+}
+.email-contact{
+  font-size: 30px;
 }
 
 footer{

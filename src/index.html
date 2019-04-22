@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -31,18 +30,18 @@
 
     <section id="about-me" class="about-me margin-top">
         <div>
-            <img src="" alt="">
-            <a name="aboutme"><h1>Acerca de mí</h1></a>
+            <a name="aboutme"><h1 class="titles">Acerca de mí</h1></a>
+            <img src="./img/avatar.jpg" alt="" class="avatar-pic">
             <div class="aboutme-box">
-                <p class="aboutme-text">Hola, soy una front-end developer interesada en temas de tecnología, los usos que se le puedan dar y las oportunidades que estos representan. La programación ha sido un complemento muy grande para mis estudios y estoy en búsqueda de tener mucho más experiencia en este campo. Soy una entusiasta de los juegos de habilidad y estoy en búsqueda de nuevos retos.</p>
+                <p class="aboutme-text titles-text">Hola, soy una front-end developer interesada en temas de tecnología, los usos que se le puedan dar y las oportunidades que estos representan. La programación ha sido un complemento muy grande para mis estudios y estoy en búsqueda de tener mucho más experiencia en este campo. Soy una entusiasta de los juegos de habilidad y estoy en búsqueda de nuevos retos.</p>
                 <a href="./files/cv.pdf" download="cv">Aquí puedes descargar mi CV</a>
             </div>
 
         </div>
     </section>
     <section id="skills" class="skills margin-top">
-        <a name="skills"><h1>Mis Habilidades</h1></a>
-        <p class="skills-text">Como Front-End Developer mis herramientas principales son JavaScript, Node, HTML y CSS. Sin embargo, 
+        <a name="skills"><h1 class="titles">Mis Habilidades</h1></a>
+        <p class="skills-text titles-text">Como Front-End Developer mis herramientas principales son JavaScript, Node, HTML y CSS. Sin embargo, 
         mientras iba realizando nuevos proyectos comencé a utilizar otros recursos los cuales he ido utilizando con mayor frecuencia,
         Node de la mano de javascript y Firebase. Actualmente me encuentro familiarizándome con el framework Angular y estoy desarrollando
         proyectos nuevos con esta herramienta. </p>
@@ -66,92 +65,134 @@
         </div>    
     </section>
     <section id="projects" class="projects margin-top">
-        <a name="projects"><h1>Mis Proyectos</h1></a>
+        <a name="projects"><h1 class="titles">Mis Proyectos</h1></a>
         <div class="projects-list">
-            <div class="data-lovers slide-box">
-                <div class="slideshow-container">
-                    <div class="mySlides1 fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="./img/slidesimg/datalovers1.png">
-                    </div>                           
-                    <div class="mySlides1 fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="./img/slidesimg/datalovers2.png">
-                    </div>    
-                    <div class="mySlides1 fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="./img/slidesimg/datalovers3.png">
+            <div class="column-one">
+                <div class="slideshow-container data-lovers">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 9</div>
+                        <img class="project-img" src="./img/slidesimg/datalovers1.png" alt="">
+                        <br>
+                        <div class="text">Manipulación de data tipo JSON</div>
+                        <a href="https://github.com/GabrielaDiazB/lim-2018-11-bc-core-am-data-lovers"><img class="link-icon" src="./img/link-icon.png" alt=""></a> 
                     </div>
-                            
-                </div>
-                <br>                            
-                <div style="text-align:center">
-                    <span class="dot1"></span> 
-                    <span class="dot1"></span> 
-                    <span class="dot1"></span> 
-                </div>
-                <h3>Manipulación de data tipo JSON</h3>   
-                <a href=""><img class="download-icon" src="./img/cloud-download-alt-solid.svg" alt=""></a> 
-            </div>
-            <div class="red-social slides-box">
-                <div class="slideshow-container">
-                    <div class="mySlides2 fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="./img/slidesimg/redsocial1.png">
-                    </div>                           
-                    <div class="mySlides2 fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="./img/slidesimg/redsocial2.png">
-                    </div>    
-                    <div class="mySlides2 fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="./img/slidesimg/redsocial3.png">
+    
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 9</div>
+                        <img src="./img/slidesimg/datalovers2.png" alt="">
+                        <br>
+                        <div class="text">Manipulación de data tipo JSON</div>
+                        <a href="https://github.com/GabrielaDiazB/lim-2018-11-bc-core-am-data-lovers"><img class="link-icon" src="./img/link-icon.png" alt=""></a> 
                     </div>
-                            
-                </div>                           
-                <div style="text-align:center">
-                    <span class="dot2"></span> 
-                    <span class="dot2"></span> 
-                    <span class="dot2"></span> 
+        
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="./img/slidesimg/datalovers3.png" alt="">
+                        <br>
+                        <div class="text">Manipulación de data tipo JSON</div>
+                        <a href="https://github.com/GabrielaDiazB/lim-2018-11-bc-core-am-data-lovers"><img class="link-icon" src="./img/link-icon.png" alt=""></a> 
+                    </div>
+        
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 9</div>
+                        <img src="./img/slidesimg/redsocial1.png" alt="">
+                        <br>
+                        <div class="text">Red Social</div>
+                        <a href="https://github.com/GabrielaDiazB/LIM008-social-network"><img class="link-icon" src="./img/link-icon.png" alt=""></a> 
+                    </div>
+        
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 9</div>
+                        <img src="./img/slidesimg/redsocial2.png" alt="">
+                        <br>
+                        <div class="text">Red Social</div>
+                        <a href="https://github.com/GabrielaDiazB/LIM008-social-network"><img class="link-icon" src="./img/link-icon.png" alt=""></a> 
+                    </div>
+        
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 9</div>
+                        <img src="./img/slidesimg/redsocial3.png" alt="">
+                        <br>
+                        <div class="text">Red Social</div>
+                        <a href="https://github.com/GabrielaDiazB/LIM008-social-network"><img class="link-icon" src="./img/link-icon.png" alt=""></a> 
+                    </div>
+        
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 9</div>
+                        <img src="./img/slidesimg/mdlinks1.png" alt="">
+                        <br>
+                        <div class="text">Creación de una Librería</div>
+                        <a href="https://github.com/GabrielaDiazB/LIM008-fe-md-links"><img class="link-icon" src="./img/link-icon.png" alt=""></a> 
+                    </div>
+        
+                    <div class="mySlides fade">
+                        <div class="numbertext">8 / 9</div>
+                        <img src="./img/slidesimg/mdlinks2.png" alt="">
+                        <br>
+                        <div class="text">Creación de una Librería</div>
+                        <a href="https://github.com/GabrielaDiazB/LIM008-fe-md-links"><img class="link-icon" src="./img/link-icon.png" alt=""></a> 
+                    </div>
+        
+                    <div class="mySlides fade">
+                        <div class="numbertext">9 / 9</div>
+                        <img src="./img/slidesimg/mdlinks3.png" alt="">
+                        <br>
+                        <div class="text">Creación de una Librería</div>
+                        <a href="https://github.com/GabrielaDiazB/LIM008-fe-md-links"><img class="link-icon" src="./img/link-icon.png" alt=""></a> 
+                    </div>
+        
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
                 <br>
-                <h3>Red Social</h3>
-                <a href=""><img class="download-icon" src="./img/cloud-download-alt-solid.svg" alt=""></a>
-            </div>
-            <div class="md-links slide-box">
-                <div class="slideshow-container">
-                    <div class="mySlides3 fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="./img/slidesimg/mdlinks1.png">
-                    </div>                           
-                    <div class="mySlides3 fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="./img/slidesimg/mdlinks2.png">
-                    </div>    
-                    <div class="mySlides3 fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="/src/img/slidesimg/mdlinks3.png">
-                    </div>                               
+                <div class="dot-chain">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
                 </div>
-                <br>                            
-                <div style="text-align:center">
-                    <span class="dot3"></span> 
-                    <span class="dot3"></span> 
-                    <span class="dot3"></span> 
-                </div>
-                <h3>Creación de una Librería</h3>
-                <a href=""><img class="download-icon" src="./img/cloud-download-alt-solid.svg" alt=""></a>
             </div>
+
+            <div class="column-two">
+                <p class="projects-description">Cada proyecto realizado requirió el aprendizaje de herramientas nuevas con las que no había trabajado antes. Fue así que
+                    en estos tres proyectos utilicé, además de lenguaje javascript, html y css, manipulación de datos del tipo JSON, Firebase, 
+                    base de datos, autenticación de data, callbacks, NodeJs, promosas, entre otros.
+                </p>
+                <p class="projects-description">
+                    En el primer proyecto, llamado <span>"Data Lovers"</span>, se realizó una página web donde se pudiese mostrar información y datos estadísticos
+                    de los campeones/personajes del juego de tipo MOBA "League of Legends". La información con la que se decidió trabajar cumple con la solicitud
+                    de una serie de usuarios entrevistados para poder visualizar de una forma más legible, simple y amigable los datos de los personajes con los que
+                    desean jugar.
+                </p>
+                <p class="projects-description">
+                    En el segundo proyecto, llamado <span>"Red Social: Agogo"</span>, se creó una red social que cumpla con la condición de poder crearse una cuenta o iniciar 
+                    sesión con otras cuentas existentes como Facebook, Twitter o Gmail. Además de ello, la aplicación web te permite realizar posts de forma pública o privada
+                    así como editarlos o poder eliminarlos. El tema de la red social fue obtenido tras un breve estudio con usuarios para saber qué tipo de red social era la 
+                    que "les hacía falta".
+                </p>
+                <p class="projects-description">
+                    Por último, el tercer proyecto fue llamado <span>"Markdown Links"</span>. Consistió en la creación de una libreria instalable que permitiera 
+                    extraer, analizar y valide los links de todos los archivos del tipo Markdown. Basta con instalarlo e ingresar una ruta para que 
+                    la librería lo recorra y muestre cuantos de estos links son válidos, están rotos, son repetidos, etc.
+                </p>
+            </div>
+
         </div>
     </section>
+
     <section id="contact-me" class="contact-me margin-top">
-        <a name="contact"><h1>Puedes encontrarme en las siguientes redes:</h1></a>
+        <a name="contact"><h1 class="titles">Puedes encontrarme en las siguientes redes:</h1></a>
         <a target ="_blank" href="https://www.linkedin.com/in/gabrieladiazbravo/"><img class="contact-icons" src="./img/linkedin-brands.svg" alt=""></a>
         <a target ="_blank" href="https://github.com/GabrielaDiazB"><img class="contact-icons" src="./img/github-square-brands.svg" alt=""></a>
         <a target ="_blank" href="https://twitter.com/GabrielaDBravo"><img class="contact-icons" src="./img/twitter-square-brands.svg" alt=""></a>     
         <div class="number-email">
             <img class="envelope-icon" src="./img/envelope-regular.svg" alt="">
-            <label for="envelope-icon">gabriela.dbravo@gmail.com</label>
+            <label for="envelope-icon" class="email-contact">gabriela.dbravo@gmail.com</label>
         </div>
     </section>
     <footer>
