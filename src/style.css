@@ -2,20 +2,78 @@ html {
   scroll-behavior: smooth;
   height: 100%;
 }
+.scrolled {
+  background-color: rgba(33, 46, 55, 0.98);
+  height: 80px;
+}
+.navbar {
+  padding: 0;
+  font-size: 25px;
+  height:70px;
+}
+
+.gdb{
+  font-size: 25px;
+}
+
+/* Header Parallax Element Style*/ 
+.paral {
+min-height: 80%;
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat; 
+background-position: center center;
+}
+
+/* Paragraph for Parallax Section */ 
+.paral h3 {
+font-size: 24px;
+color:#f5f5f5;
+text-align: center;
+line-height: 60px;
+}
+ 
+/* Heading for Parallax Section */ 
+.paral h1 {
+color: rgba(255, 255, 255, 0.8);
+font-size: 60px;
+text-align: center;
+padding-top: 60px;
+line-height: 100px;
+}
+
+/* Image for Parallax Section */ 
+.paralsec {
+background-image: url("http://www.customtrimonline.com/wp-content/uploads/2015/05/parallax-image.jpg");
+}
+
+.paralsec1 {
+background-image: url("./img/fondo-home.png")}
+ 
+.paralsec2 {
+background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");
+}
+ 
+/* Add more images for more sections */
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron{margin-bottom: 0;}
+
+/* Footer */
+.wn-footer {
+  padding: 2.5rem 0px;
+  text-align: end;
+  color: white;
+  background-color: rgb(33, 46, 55);
+  border-top: .05rem solid #e5e5e5;
+
+  }
 
 body,
 header,
 .view {
   height: 100%;
 }
-
-.fondo-home{
-  background-image: url('./img/fondo-home.png'); 
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  background-position: center center;
-}
-
 
 @media (max-width: 740px) {
   html,
@@ -34,11 +92,6 @@ header,
   background: transparent !important;
 }
 
-@media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #78909c !important;
-  }
-}
 
 h1 {
   letter-spacing: 8px;
@@ -57,3 +110,72 @@ h5 {
   color: #fff;
 }
 
+.area {
+  padding-top:5px;
+  padding-bottom:120px;
+}
+
+.area1 {
+  height: 200px;
+  padding: 10px;
+  align-content: center;
+}
+/*-- aboutus Image --*/
+.aboutus-image {
+margin-right: 5px;
+width: 400px; }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .aboutus-image {
+    margin-right: 35px;
+    width: 345px; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .aboutus-image {
+    margin-bottom: 30px;
+    float: none; } }
+@media only screen and (max-width: 767px) {
+  .aboutus-image {
+    margin-bottom: 30px;
+    margin-right: 0;
+    float: none;
+    width: auto; } }
+.aboutus-image img {
+  width: 100%; }
+
+/*-- aboutus Content --*/
+.aboutus-content h1 {
+line-height: 50px;
+margin-bottom: 20px; }
+@media only screen and (max-width: 479px) {
+  .aboutus-content h1 {
+    font-size: 30px;
+    line-height: 30px; } }
+
+.text-content {
+font-size: 25px;
+line-height: 27px; 
+text-align: justify;
+}
+
+.skills-icon{
+  width: 150px;
+}
+
+.contact-icons{
+  width: 70px;
+}
+.envelope-icon{
+  width: 70px;
+}
+
+.arrow{
+  font-size: 50px;
+  color: #E4E4E5;
+  opacity: 0.8;
+}
+.arrow:hover{
+  opacity: 1;
+}
+.card{
+  border: none;
+  background-color: transparent;
+}

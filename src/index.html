@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Gabriela Diaz - Portafolio</title>
 </head>
-<body>
+<body class="has-loading-screen loading-done">
     <header>
-        <nav id="menu-bar" class="navbar navbar-expand-lg navbar-dark navbar-fixed-top scrolling-navbar">
-            <div class="container-fluid justify-content-end">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+            <div class="container-fluid justify-content-end menu-bar ">
                 <a class="navbar-brand" href="#">
-                    <strong>GDB</strong>
+                    <strong class="gdb">GDB</strong>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent-7" aria-expanded="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                    <ul class="navbar-nav mr-auto">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
@@ -40,17 +42,17 @@
                 </div>
             </div>
         </nav> 
-
-        <div class="view fondo-home">
+<!-- First Parallax Section class="view fondo-home"-->
+        <div class="jumbotron paral paralsec">
             <a name="home"></a>
             <div class="mask rgba-black-light align-items-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 mb-4 text-center">
-                            <h1 class="h1-reponsive text-uppercase mb-0 pt-md-5 pt-5 white"><strong>Gabriela Díaz</strong></h1>
+                            <h1 class="h1-reponsive text-uppercase mb-0 pt-md-5 pt-5 white display-3"><strong>Gabriela Díaz</strong></h1>
                             <hr class="hr-light my-4">
                             <h3 class="text-uppercase mb-4 white">Soy una Front-End Developer</h3>
-                            <a href="#aboutme"><i class="fas fa-arrow-circle-down"></i></a>
+                            <a href="#aboutme"><i class="fas fa-arrow-circle-down arrow"></i></a>
                         </div>
                     </div>
                 </div>
@@ -60,98 +62,122 @@
 
     
 
-    <section id="about-me" class="about-me margin-top">
-        <div>
-            <a name="aboutme"><h1 class="titles">Acerca de mí</h1></a>
-            <img src="./img/avatar.jpg" alt="" class="avatar-pic">
-            <div class="aboutme-box">
-                <p class="aboutme-text titles-text">Hola, soy una front-end developer interesada en temas de tecnología, los usos que se le puedan dar y las oportunidades que estos representan. La programación ha sido un complemento muy grande para mis estudios y estoy en búsqueda de tener mucho más experiencia en este campo. Soy una entusiasta de los juegos de habilidad y estoy en búsqueda de nuevos retos.</p>
-                <a href="./files/cv.pdf" download="cv">Aquí puedes descargar mi CV</a>
+    <section id="about-me" class="area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="aboutus-image float-left hidden-sm"><img src="./img/avatar.jpg" alt="" class="rounded-circle avatar-pic" alt="Circular Image"></div>
+                    </div>
+                    <div  class="col-md-8 col-sm-6 col-xs-12">
+                        <div class="aboutus-content">
+                                <a name="aboutme"><h1 class="display-3">Acerca de mí</h1></a>
+                                <p class="text-content">Hola, soy una front-end developer interesada en temas de tecnología, los usos que se le puedan dar y las oportunidades que estos representan. La programación ha sido un complemento muy grande para mis estudios y estoy en búsqueda de tener mucho más experiencia en este campo. Soy una entusiasta de los juegos de habilidad y estoy en búsqueda de nuevos retos.</p>
+                                 <a href="./files/cv.pdf" download="cv">Aquí puedes descargar mi CV</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
 
-    <section>
-        <a name="skills"><h1 class="titles">Mis Habilidades</h1></a>
-        <p class="skills-text titles-text">Como Front-End Developer mis herramientas principales son JavaScript, Node, HTML y CSS. Sin embargo, 
-        mientras iba realizando nuevos proyectos comencé a utilizar otros recursos los cuales he ido utilizando con mayor frecuencia,
-        Node de la mano de javascript y Firebase. Actualmente me encuentro familiarizándome con el framework Angular y estoy desarrollando
-        proyectos nuevos con esta herramienta. </p>
-        <div class="skills-chart">
-            <span><img class="skills-icon" src="./img/html5.png" alt=""> HTML</span> 
-            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-            <span><img class="skills-icon" src="./img/css3.png" alt=""> CSS</span>
-            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-            <span><img class="skills-icon" src="./img/javascript6.png" alt=""> Javascript</span>
-            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-            <span><img class="skills-icon" src="./img/nodejs.png" alt=""> Node</span>
-            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-            <span><img class="skills-icon" src="./img/github.png" alt=""> GitHub</span>
-            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-            <span><img class="skills-icon" src="./img/git.png" alt=""> Git</span>
-            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-            <span><img class="skills-icon" src="./img/firebase.png" alt="">Firebase</span>
-            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-            <span><img class ="skills-icon" src="./img/angular.png" alt=""> Angular</span>
-            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-        </div>    
+    <section class="jumbotron paral paralsec1">
+        <div class="mask rgba-black-light align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-4 text-center">
+                        <a name="skills"><h1 class="display-3">Mis Habilidades</h1></a>
+                        <p class="text-content white">Como Front-End Developer mis herramientas principales son JavaScript, Node, HTML y CSS. Sin embargo, 
+                         mientras iba realizando nuevos proyectos comencé a utilizar otros recursos los cuales he ido utilizando con mayor frecuencia,
+                        Node de la mano de javascript y Firebase. Actualmente me encuentro familiarizándome con el framework Angular y estoy desarrollando
+                        proyectos nuevos con esta herramienta. </p>                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="area1">
+                <div class="container-fluid">
+                    <div class="card-deck">
+                        <div class="card"><img class="skills-icon" src="./img/html5.png" alt=""></div>
+                        <div class="card"><img class="skills-icon" src="./img/css3.png" alt=""></div>
+                        <div class="card"><img class="skills-icon" src="./img/javascript6.png" alt=""></div>
+                        <div class="card"><img class="skills-icon" src="./img/nodejs.png" alt=""></div>
+                        <div class="card"><img class="skills-icon" src="./img/github.png" alt=""></div>
+                        <div class="card"><img class="skills-icon" src="./img/git.png" alt=""></div>
+                        <div class="card"><img class="skills-icon" src="./img/firebase.png" alt=""></div>
+                        <div class="card"><img class ="skills-icon" src="./img/angular.png" alt=""></div>
+                        <div class="card"><img class ="skills-icon" src="./img/typescript.png" alt=""></div>
+                    </div>  
+                </div>
+        </div>
     </section>
 
-    <section>
-        <a name="projects"><h1>Mis Proyectos</h1></a>
-        <p>Cada proyecto realizado requirió el aprendizaje de herramientas nuevas con las que no había trabajado antes. Fue así que
+    <section class="area">
+        <div class="container-fluid">
+            <a name="projects"><h1 class="display-3">Mis Proyectos</h1></a>
+            <p class="text-content">Cada proyecto realizado requirió el aprendizaje de herramientas nuevas con las que no había trabajado antes. Fue así que
                 en estos tres proyectos utilicé, además de lenguaje javascript, html y css, manipulación de datos del tipo JSON, Firebase, 
                 base de datos, autenticación de data, callbacks, NodeJs, promosas, entre otros.</p>
-        <div class="card-deck">
-            <div class="card">
-                <img src="./img/slidesimg/datalovers1.png" alt="datalovers">
-                <div class="card-body">
-                    <h5 class="card-title">Manipulación de data tipo JSON</h5>
-                    <p class="card-text">En el primer proyecto, llamado <span>"Data Lovers"</span>, se realizó una página web donde se pudiese mostrar información y datos estadísticos
-                        de los campeones/personajes del juego de tipo MOBA "League of Legends". La información con la que se decidió trabajar cumple con la solicitud
-                        de una serie de usuarios entrevistados para poder visualizar de una forma más legible, simple y amigable los datos de los personajes con los que
-                        desean jugar.
-                    </p>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="./img/slidesimg/datalovers1.png" alt="datalovers">
+                    <div class="card-body">
+                        <h5 class="card-title">Manipulación de data tipo JSON</h5>
+                        <p class="card-text">En el primer proyecto, llamado <span>"Data Lovers"</span>, se realizó una página web donde se pudiese mostrar información y datos estadísticos
+                            de los campeones/personajes del juego de tipo MOBA "League of Legends". La información con la que se decidió trabajar cumple con la solicitud
+                            de una serie de usuarios entrevistados para poder visualizar de una forma más legible, simple y amigable los datos de los personajes con los que
+                            desean jugar.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="./img/slidesimg/redsocial1.png" alt="redsocial">
-                <div class="card-body">
-                    <h5 class="card-title">Red Social</h5>
-                    <p class="card-text">En el segundo proyecto, llamado <span>"Red Social: Agogo"</span>, se creó una red social que cumpla con la condición de poder crearse una cuenta o iniciar 
-                        sesión con otras cuentas existentes como Facebook, Twitter o Gmail. Además de ello, la aplicación web te permite realizar posts de forma pública o privada
-                        así como editarlos o poder eliminarlos. El tema de la red social fue obtenido tras un breve estudio con usuarios para saber qué tipo de red social era la 
-                        que "les hacía falta".
-                    </p>
+                <div class="card">
+                    <img src="./img/slidesimg/redsocial1.png" alt="redsocial">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Social</h5>
+                        <p class="card-text">En el segundo proyecto, llamado <span>"Red Social: Agogo"</span>, se creó una red social que cumpla con la condición de poder crearse una cuenta o iniciar 
+                            sesión con otras cuentas existentes como Facebook, Twitter o Gmail. Además de ello, la aplicación web te permite realizar posts de forma pública o privada
+                            así como editarlos o poder eliminarlos. El tema de la red social fue obtenido tras un breve estudio con usuarios para saber qué tipo de red social era la 
+                            que "les hacía falta".
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="./img/slidesimg/mdlinks2.png" alt="redsocial">
-                <div class="card-body">
-                    <h5 class="card-title">Creación de una Librería</h5>
-                    <p class="card-text">Por último, el tercer proyecto fue llamado <span>"Markdown Links"</span>. Consistió en la creación de una libreria instalable que permitiera 
-                        extraer, analizar y valide los links de todos los archivos del tipo Markdown. Basta con instalarlo e ingresar una ruta para que 
-                        la librería lo recorra y muestre cuantos de estos links son válidos, están rotos, son repetidos, etc.
-                    </p>
+                <div class="card">
+                    <img src="./img/slidesimg/mdlinks2.png" alt="redsocial">
+                    <div class="card-body">
+                        <h5 class="card-title">Creación de una Librería</h5>
+                        <p class="card-text">Por último, el tercer proyecto fue llamado <span>"Markdown Links"</span>. Consistió en la creación de una libreria instalable que permitiera 
+                            extraer, analizar y valide los links de todos los archivos del tipo Markdown. Basta con instalarlo e ingresar una ruta para que 
+                            la librería lo recorra y muestre cuantos de estos links son válidos, están rotos, son repetidos, etc.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact-me" class="contact-me margin-top">
-        <a name="contact"><h1 class="titles">Puedes encontrarme en las siguientes redes:</h1></a>
-        <a target ="_blank" href="https://www.linkedin.com/in/gabrieladiazbravo/"><img class="contact-icons" src="./img/linkedin-brands.svg" alt=""></a>
-        <a target ="_blank" href="https://github.com/GabrielaDiazB"><img class="contact-icons" src="./img/github-square-brands.svg" alt=""></a>
-        <a target ="_blank" href="https://twitter.com/GabrielaDBravo"><img class="contact-icons" src="./img/twitter-square-brands.svg" alt=""></a>     
-        <div class="number-email">
-            <img class="envelope-icon" src="./img/envelope-regular.svg" alt="">
-            <label for="envelope-icon" class="email-contact">gabriela.dbravo@gmail.com</label>
+    <div class="jumbotron paral paralsec2"></div>
+
+    <section id="contact-me" class="area">
+        <div class="container-fluid">
+            <a name="contact"><h1 class="display-3">Puedes encontrarme en las siguientes redes:</h1></a>
+            <a target ="_blank" href="https://www.linkedin.com/in/gabrieladiazbravo/"><img class="contact-icons" src="./img/linkedin-brands.svg" alt=""></a>
+            <a target ="_blank" href="https://github.com/GabrielaDiazB"><img class="contact-icons" src="./img/github-square-brands.svg" alt=""></a>
+            <a target ="_blank" href="https://twitter.com/GabrielaDBravo"><img class="contact-icons" src="./img/twitter-square-brands.svg" alt=""></a>     
+            <div class="number-email">
+                <img class="envelope-icon" src="./img/envelope-regular.svg" alt="">
+                <label for="envelope-icon" class="email-contact">gabriela.dbravo@gmail.com</label>
+            </div>
         </div>
+
     </section>
-    <footer>
+
+    <footer class="wn-footer">
         <h2 class="footer-by">Coded by Gabriela Díaz.</h2>
-        <h2 class="footer-update">Last updated 1/04/2019</h2>
+        <h2 class="footer-update">Last updated 13/05/2019</h2>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
